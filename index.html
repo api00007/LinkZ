@@ -741,7 +741,7 @@
             const status = document.getElementById('status-fw');
             status.innerText = "Loading..."; 
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://fsports.vercel.app/api?user=cricz"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://fawna-api.vercel.app/api?user=cricz"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataFw = data.Live_Data ||[]; 
