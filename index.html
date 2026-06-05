@@ -791,7 +791,7 @@
             const status = document.getElementById('status-rx');
             status.innerText = "Loading...";
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://roxi-stream.vercel.app/api?user=cricz"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-seven.vercel.app/Roxi"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataRx = data.Live_Data ||[]; 
@@ -872,7 +872,7 @@
             const status = document.getElementById('status-bg');
             status.innerText = "Checking...";
             try {
-                const res = await fetch("https://raw.githubusercontent.com/srhady/bingstream/main/playlist.json");
+                const res = await fetch("https://bing-stream-wine.vercel.app/");
                 const data = await res.json();
                 
                 status.innerHTML = `Last Updated: <span style="color:#00e676;">${data.playlist_info?.last_update_time || "N/A"}</span>`;
