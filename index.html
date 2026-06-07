@@ -741,7 +741,7 @@
             const status = document.getElementById('status-fw');
             status.innerText = "Loading..."; 
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://fawna-api.vercel.app/api?user=cricz"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-two.vercel.app/fawna"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataFw = data.Live_Data ||[]; 
@@ -791,7 +791,7 @@
             const status = document.getElementById('status-rx');
             status.innerText = "Loading...";
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-seven.vercel.app/Roxi"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-two.vercel.app/Roxi"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataRx = data.Live_Data ||[]; 
