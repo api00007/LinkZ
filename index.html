@@ -872,7 +872,7 @@
             const status = document.getElementById('status-bg');
             status.innerText = "Checking...";
             try {
-                const res = await fetch("https://bing-stream-wine.vercel.app/");
+                const res = await fetch("https://bing-stream-one.vercel.app/");
                 const data = await res.json();
                 
                 status.innerHTML = `Last Updated: <span style="color:#00e676;">${data.playlist_info?.last_update_time || "N/A"}</span>`;
