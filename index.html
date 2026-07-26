@@ -823,7 +823,7 @@
             const status = document.getElementById('status-fw');
             status.innerText = "Loading..."; 
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-two.vercel.app/fawna"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://raw.githubusercontent.com/api00007/ALL-ROUNDER/refs/heads/main/fawna.json"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataFw = data.Live_Data || []; 
@@ -872,7 +872,7 @@
             const status = document.getElementById('status-rx');
             status.innerText = "Loading...";
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-two.vercel.app/Roxi"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://raw.githubusercontent.com/api00007/ALL-ROUNDER/refs/heads/main/Roxi.json"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataRx = data.Live_Data || []; 
@@ -1073,7 +1073,7 @@
             const status = document.getElementById('status-gz');
             status.innerText = "Loading..."; 
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-two.vercel.app/Goozapp"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://raw.githubusercontent.com/api00007/ALL-ROUNDER/refs/heads/main/Goozapp.json"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataGz = data.Live_Data || []; 
