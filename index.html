@@ -14,7 +14,6 @@
             -webkit-user-select: text; user-select: text;
         }
 
-        /* --- SEARCH BAR STYLE --- */
         .search-wrapper {
             padding: 15px 10px 5px 10px; background: #0f0f0f;
             position: sticky; top: 0; z-index: 2500;
@@ -30,7 +29,6 @@
         .search-input-container input:focus { border-color: #fc1055; box-shadow: 0 0 10px rgba(252, 16, 85, 0.2); }
         .search-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #666; font-size: 16px; }
 
-        /* --- TAB NAVIGATION (One Line Scrollable) --- */
         .tab-container {
             position: sticky; top: 65px; z-index: 2000;
             background: #111; padding: 10px;
@@ -47,7 +45,6 @@
         }
         .tab-btn.active { background: #fff; color: #000; border-color: #fff; }
 
-        /* --- JSON UPDATE TIME STYLE --- */
         .json-update-time {
             text-align: center; font-size: 10px; color: #aaa; margin-bottom: 15px;
             background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 20px;
@@ -56,7 +53,6 @@
         }
         .json-update-time span { color: #fc1055; }
 
-        /* --- COMMON UTILS --- */
         .page-section { display: none; padding: 10px; max-width: 450px; margin: 0 auto; animation: fadeIn 0.4s; }
         .page-section.active { display: block; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -68,15 +64,9 @@
             z-index: 3000; box-shadow: 0 5px 15px rgba(0,0,0,0.5); text-align: center;
         }
 
-        /* =========================================
-           1. FANCODE STYLES (PREMIUM REDESIGN)
-           ========================================= */
         .fc-theme h2 { font-size: 18px; font-weight: 700; color: #fc1055; font-style: italic; }
         .player-wrapper-fc { display: none; width: 100%; height: 240px; background: #000; margin-bottom: 20px; border-radius: 12px; overflow: hidden; border: 1px solid #333; position: sticky; top: 120px; z-index: 999; }
-        
         .card-fc { background: #1c1c1e; border-radius: 12px; overflow: hidden; margin-bottom: 15px; border: 1px solid #2c2c2e; display: flex; flex-direction: column; }
-        
-        /* Image Box Fixed Aspect Ratio */
         .thumb-box-fc { position: relative; width: 100%; aspect-ratio: 16/9; height: auto; }
         .thumb-fc { width: 100%; height: 100%; object-fit: cover; }
         .fc-live-badge { position: absolute; bottom: 10px; right: 10px; background: #ff0000; color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; letter-spacing: 0.5px; animation: pulse 1.5s infinite; }
@@ -90,31 +80,23 @@
         .fc-time-row { color: #888; font-size: 11px; margin-bottom: 15px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
         .fc-lang { background: #004d26; color: #00ff88; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; }
         
-        /* Updated Button Layout */
         .btn-play-fc { width: 50px; background: #222; color: #fc1055; border: 1px solid #333; border-radius: 8px; font-size: 16px; cursor: pointer; height: 42px; display: flex; align-items: center; justify-content: center; transition: 0.2s; }
         .btn-play-fc:active { background: #333; }
         .action-btn-fc { flex: 1; border: none; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; font-weight: 700; font-size: 13px; cursor: pointer; height: 42px; transition: 0.2s; color: #fff; }
         .action-btn-fc:active { transform: scale(0.98); }
         
-        /* Button Gradients */
         .fc-hd { background: linear-gradient(90deg, #ff6a00 0%, #ffc837 100%); color: #000; }
         .fc-ind { background: linear-gradient(90deg, #56ccf2 0%, #2f80ed 100%); color: #fff; }
         .fc-ban { background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%); color: #000; }
         .fc-dai { background: linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%); color: #fff; }
         .fc-stream { background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%); color: #fff; }
         
-        /* =========================================
-           2. SONYLIV STYLES (PRESERVED)
-           ========================================= */
         .sn-theme h2 { font-size: 18px; font-weight: 700; color: #ff8c00; font-style: italic; }
         .player-wrapper-sn { display: none; width: 100%; height: 240px; background: #000; margin-bottom: 20px; border-radius: 12px; overflow: hidden; border: 1px solid #333; position: sticky; top: 120px; z-index: 999; }
         .card-sn { background: #1c1c1e; border-radius: 12px; overflow: hidden; margin-bottom: 12px; border: 1px solid #2c2c2e; display: flex; flex-direction: column; }
         .btn-play-sn { width: 50px; background: #222; color: #ff8c00; border: 1px solid #444; border-radius: 6px; font-size: 16px; cursor: pointer; height: 32px; }
         .section-header-sn { font-size: 13px; font-weight: 700; margin: 20px 0 10px; color: #ccc; text-transform: uppercase; border-left: 3px solid #ff8c00; padding-left: 8px; }
 
-        /* =========================================
-           3. SPORTS HUB STYLES (PRESERVED & SEARCH FIXED)
-           ========================================= */
         #page-sportify .player-wrapper, #page-search-results .player-wrapper {
             display: none; width: 100%; height: 240px; background: #000;
             margin-bottom: 20px; border-radius: 12px; overflow: hidden;
@@ -215,9 +197,6 @@
         #page-sportify .empty-msg { text-align: center; color: #555; font-size: 12px; margin-top: 20px; }
         #page-sportify .section-header { margin: 20px 0 10px; font-size: 12px; color: #00e676; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
 
-        /* =========================================
-           4. FAWANA STYLES (PRESERVED)
-           ========================================= */
         .fw-theme h2, .rx-theme h2 { font-size: 20px; font-weight: 800; color: #fff; font-style: italic; letter-spacing: 1px; }
         .fw-theme h2 span, .rx-theme h2 span { color: #ff3b3b; }
         .player-wrapper-fw, .player-wrapper-rx { display: none; width: 100%; height: 240px; background: #000; margin-bottom: 20px; border-radius: 12px; overflow: hidden; border: 1px solid #333; position: sticky; top: 120px; z-index: 999; }
@@ -233,7 +212,6 @@
         .btn-copy-fw, .btn-copy-rx { width: 45px; background: #27272a; color: #fff; border: 1px solid #3f3f46; border-radius: 8px; cursor: pointer; height: 40px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
         .refresh-btn-fw, .refresh-btn-rx { background: #222; color: #fff; border: 1px solid #444; padding: 6px 14px; border-radius: 8px; font-size: 11px; font-weight: 600; cursor: pointer; }
 
-        /* Shared Buttons */
         .btn-dai { background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%); }
         .btn-pub { background: linear-gradient(90deg, #1fa2ff 0%, #12d8fa 100%); color: #000; }
         .btn-video { background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%); color: #fff; }
@@ -249,15 +227,11 @@
         .empty-msg { text-align: center; color: #666; font-size: 12px; padding: 20px; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
 
-        /* =========================================
-           6. BING STREAM STYLES
-           ========================================= */
         .bg-theme h2 { font-size: 20px; font-weight: 800; color: #fff; font-style: italic; letter-spacing: 1px; }
         .bg-theme h2 span { color: #00e676; } 
 
         .card-bg { background: #1c1c1e; border-radius: 12px; margin-bottom: 15px; border: 1px solid #2c2c2e; display: flex; flex-direction: column; overflow: hidden; }
         
-        /* 1. TOP SECTION (LOGOS & VS) */
         .bg-matchup-container {
             position: relative; display: flex; justify-content: space-between; align-items: center;
             padding: 20px 15px; background: #151515; border-bottom: 1px solid #2c2c2e;
@@ -267,10 +241,8 @@
         .bg-team-name { font-size: 11px; font-weight: 600; color: #fff; line-height: 1.2; word-break: break-word; }
         .bg-vs { width: 20%; text-align: center; font-size: 18px; font-weight: 800; color: #555; }
         
-        /* TOP RIGHT LIVE BADGE */
         .bg-live-badge { position: absolute; top: 10px; right: 10px; background: #ff0000; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; animation: pulse 1.5s infinite; letter-spacing: 0.5px; }
 
-        /* 2. MATCH DETAILS SECTION */
         .bg-details { padding: 15px; }
         .bg-title-row { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; line-height: 1.3; }
         .bg-cat { color: #fc1055; font-size: 16px; font-weight: 800; } 
@@ -280,7 +252,6 @@
         .bg-status { color: #888; font-size: 12px; margin-bottom: 6px; text-transform: uppercase; }
         .bg-time { color: #888; font-size: 12px; margin-bottom: 15px; }
 
-        /* 3. BUTTONS & HEADERS */
         .bg-btn-group { display: flex; flex-direction: column; gap: 8px; }
         .bg-btn-row { display: flex; gap: 6px; width: 100%; align-items: center; }
         
@@ -294,20 +265,22 @@
         
         .section-header-bg { margin: 20px 0 10px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
 
+        .dm-theme h2 { font-size: 20px; font-weight: 800; color: #fff; font-style: italic; letter-spacing: 1px; }
+        .dm-theme h2 span { color: #00e5ff; }
+        .card-dm { background: #1c1c1e; border-radius: 12px; margin-bottom: 15px; border: 1px solid #2c2c2e; display: flex; flex-direction: column; overflow: hidden; }
+        .btn-dm-hls { background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%); color: #fff; }
+        .btn-dm-sd { background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%); color: #fff; }
     </style>
 </head>
 <body>
 
-    <!-- UNIVERSAL SEARCH BAR -->
     <div class="search-wrapper">
         <div class="search-input-container">
             <span class="search-icon">🔍</span>
-            <!-- Autocomplete off to prevent keyboard suggestions lag -->
             <input type="text" id="universal-search" placeholder="Search by team, league or match..." autocomplete="off" oninput="debounceSearch(this.value)">
         </div>
     </div>
 
-    <!-- TAB NAVIGATION -->
     <div class="tab-container" id="tab-nav">
         <button class="tab-btn active" onclick="switchTab('page-fancode', this)">FANCODE</button>
         <button class="tab-btn" onclick="switchTab('page-sony', this)">SONYLIV</button>
@@ -315,19 +288,16 @@
         <button class="tab-btn" onclick="switchTab('page-fawana', this)">FAWANA</button>
         <button class="tab-btn" onclick="switchTab('page-roxi', this)">ROXI</button>
         <button class="tab-btn" onclick="switchTab('page-bing', this)">BING STREAM</button>
+        <button class="tab-btn" onclick="switchTab('page-demandon', this)">DEMAND ON</button>
         <button class="tab-btn" onclick="switchTab('page-goozapp', this)">GOOZAPP</button>
         <button class="tab-btn" onclick="switchTab('page-main-stream', this)">MAIN STREAM</button>
         <button class="tab-btn" onclick="switchTab('page-edge-stream', this)">EDGE STREAM</button>
     </div>
 
-    <!-- SEARCH RESULTS SECTION -->
     <div id="page-search-results" class="page-section">
         <div id="search-results-content"></div>
     </div>
 
-    <!-- =======================================================
-         1. FANCODE SECTION 
-         ======================================================= -->
     <div id="page-fancode" class="page-section active fc-theme">
         <header class="header-common">
             <h2>FANCODE LIVE</h2>
@@ -337,9 +307,6 @@
         <div id="cards-container-fc"></div>
     </div>
 
-    <!-- =======================================================
-         2. SONYLIV SECTION
-         ======================================================= -->
     <div id="page-sony" class="page-section sn-theme">
         <header class="header-common">
             <h2>SONYLIV LIVE</h2>
@@ -350,9 +317,6 @@
         <div id="upcoming-section-sn"></div>
     </div>
 
-    <!-- =======================================================
-         3. SPORTS HUB SECTION 
-         ======================================================= -->
     <div id="page-sportify" class="page-section sp-theme">
         <header>
             <div class="top-row">
@@ -374,9 +338,6 @@
         </div>
     </div>
 
-    <!-- =======================================================
-         4. FAWANA SECTION 
-         ======================================================= -->
     <div id="page-fawana" class="page-section fw-theme">
         <header class="header-common">
             <h2>SPORTS <span>LIVE</span></h2>
@@ -386,9 +347,6 @@
         <div id="cards-container-fw"></div>
     </div>
 
-    <!-- =======================================================
-         5. ROXI SECTION 
-         ======================================================= -->
     <div id="page-roxi" class="page-section rx-theme">
         <header class="header-common">
             <h2>ROXI <span>STREAM</span></h2>
@@ -398,9 +356,6 @@
         <div id="cards-container-rx"></div>
     </div>
 
-    <!-- =======================================================
-         6. BING STREAM SECTION 
-         ======================================================= -->
     <div id="page-bing" class="page-section bg-theme">
         <header class="header-common">
             <h2>BING <span>STREAM</span></h2>
@@ -410,9 +365,15 @@
         <div id="cards-container-bg"></div>
     </div>
 
-    <!-- =======================================================
-         7. GOOZAPP SECTION 
-         ======================================================= -->
+    <div id="page-demandon" class="page-section dm-theme">
+        <header class="header-common">
+            <h2>DEMAND <span>ON</span></h2>
+            <button class="refresh-btn" onclick="fetchDemandOn()">🔄 REFRESH</button>
+        </header>
+        <div style="text-align:center;"><div id="status-dm" class="json-update-time">Loading Server...</div></div>
+        <div id="cards-container-dm"></div>
+    </div>
+
     <div id="page-goozapp" class="page-section fw-theme">
         <header class="header-common">
             <h2>GOOZAPP <span>LIVE</span></h2>
@@ -422,9 +383,6 @@
         <div id="cards-container-gz"></div>
     </div>
 
-    <!-- =======================================================
-         8. MAIN STREAM SECTION 
-         ======================================================= -->
     <div id="page-main-stream" class="page-section fw-theme">
         <header class="header-common">
             <h2>MAIN <span>STREAM</span></h2>
@@ -434,9 +392,6 @@
         <div id="cards-container-ms"></div>
     </div>
 
-    <!-- =======================================================
-         9. EDGE STREAM SECTION 
-         ======================================================= -->
     <div id="page-edge-stream" class="page-section fw-theme">
         <header class="header-common">
             <h2>EDGE <span>STREAM</span></h2>
@@ -449,9 +404,6 @@
     <div id="toast" class="toast">Link Copied</div>
 
     <script>
-        // =======================================================
-        // SECTION VISIBILITY CONFIGURATION ('yes' = show, 'no' = hide)
-        // =======================================================
         const SECTION_VISIBILITY = {
             'page-fancode': 'yes',
             'page-sony': 'yes',
@@ -459,6 +411,7 @@
             'page-fawana': 'yes',
             'page-roxi': 'yes',
             'page-bing': 'yes',
+            'page-demandon': 'yes',
             'page-goozapp': 'yes',
             'page-main-stream': 'no',
             'page-edge-stream': 'no'
@@ -483,29 +436,28 @@
 
         const PROXY_URL = "https://tight-river-c898.ranatoufik66.workers.dev/?url=";
 
-        // --- GLOBAL DATA STORAGE ---
         let allDataFc = [];
         let allDataSn = [];
         let allDataSp = [];
         let allDataFw = [];
         let allDataRx = [];
         let allDataBg = [];
+        let allDataDm = [];
         let allDataGz = [];
         let allDataMs = [];
         let allDataEs = [];
 
-        // --- RENDER FLAGS (To prevent rendering off-screen tabs) ---
         let isFcRendered = false;
         let isSnRendered = false;
         let isSpRendered = false;
         let isFwRendered = false;
         let isRxRendered = false;
         let isBgRendered = false;
+        let isDmRendered = false;
         let isGzRendered = false;
         let isMsRendered = false;
         let isEsRendered = false;
 
-        // --- TAB SWITCHER LOGIC ---
         function switchTab(pageId, btn) {
             document.getElementById('universal-search').value = '';
             document.getElementById('page-search-results').classList.remove('active');
@@ -516,19 +468,18 @@
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             if(btn) btn.classList.add('active');
 
-            // Render specific tab ONLY when clicked (if data is already fetched silently)
             if(pageId === 'page-fancode') renderFcContainer();
             if(pageId === 'page-sony') renderSnContainer();
             if(pageId === 'page-sportify') renderSpContainer();
             if(pageId === 'page-fawana') renderFwContainer();
             if(pageId === 'page-roxi') renderRxContainer();
             if(pageId === 'page-bing') renderBgContainer();
+            if(pageId === 'page-demandon') renderDmContainer();
             if(pageId === 'page-goozapp') renderGzContainer();
             if(pageId === 'page-main-stream') renderMsContainer();
             if(pageId === 'page-edge-stream') renderEsContainer();
         }
 
-        // --- COMMON UTILS ---
         function copyLink(text, msg) {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(text).then(() => showToast(msg)).catch(() => fallbackCopy(text, msg));
@@ -543,13 +494,10 @@
             t.style.opacity = '1'; setTimeout(() => t.style.opacity = '0', 2000);
         }
 
-        /* ----------------------------------------------------
-           1. FANCODE LOGIC 
-           ---------------------------------------------------- */
         function playFcStream(url) { if(url && url!=="Unavailable") copyLink(url, "Link Copied!"); }
 
         async function fetchFancode() {
-            isFcRendered = false; // Reset render flag on refresh
+            isFcRendered = false;
             const status = document.getElementById('status-fc');
             status.innerText = "Checking..."; 
             try {
@@ -558,7 +506,6 @@
                 allDataFc = (data.matches && Array.isArray(data.matches)) ? data.matches : (Array.isArray(data) ? data : []);
                 status.innerHTML = `Last Updated: <span>${data.last_updated || "N/A"}</span>`;
                 
-                // Only build HTML if this tab is active
                 if(document.getElementById('page-fancode').classList.contains('active')) {
                     renderFcContainer();
                 }
@@ -583,9 +530,7 @@
                 if(l && l !== "Unavailable" && l !== "null" && l !== null) {
                     btns += `
                     <div class="btn-row-common">
-                        <!-- Tap play button to copy Server Name -->
                         <button class="btn-play-fc" onclick="copyLink('${t}', 'Server Name Copied!')">▶</button>
-                        <!-- Tap action button to copy stream link -->
                         <button class="action-btn-fc ${btnClass}" onclick="copyLink('${l}', 'Link Copied!')">
                             <span>${t}</span>
                             <span style="font-size:15px;">${icon}</span>
@@ -594,7 +539,6 @@
                 }
             };
             
-            // 5 Specified Servers only
             addBtn(links.fancode_cdn, 'fc-ind', 'FANCODE FHD 🇮🇳', '📋');
             addBtn(links.fancode_bd_cdn, 'fc-ban', 'FANCODE FHD 🇧🇩', '📋');
             addBtn(links.fancode_np_cdn, 'fc-ind', 'FANCODE FHD 🇳🇵', '📋');
@@ -619,9 +563,6 @@
             </div>`;
         }
 
-        /* ----------------------------------------------------
-           2. SONYLIV LOGIC
-           ---------------------------------------------------- */
         function playSnStream(url) { if(url) copyLink(url, "Link Copied!"); }
 
         async function fetchSony() {
@@ -665,9 +606,6 @@
             return `<div class="card-sn"><div class="thumb-box-fc"><img src="${m.src||m.image}" loading="lazy" class="thumb-fc" onerror="this.src='https://via.placeholder.com/400x200'">${isLive ? '<span class="live-badge-common">LIVE</span>' : ''}</div><div class="content-fc"><div style="font-size:13px; font-weight:600;">${m.match_name||m.title}</div><div style="font-size:10px; color:#aaa; margin-bottom:5px;">${m.event_name||'Sports'}</div><div class="btn-group-common">${btns}</div></div></div>`;
         }
 
-        /* ----------------------------------------------------
-           3. SPORTS HUB LOGIC (UPDATED FOR NEW JSON)
-           ---------------------------------------------------- */
         function playSpStream(url) { if(url) copyLink(url, "Link Copied!"); }
         
         let allMatchesSp = []; 
@@ -682,7 +620,6 @@
                 const data = await response.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update time"] || data["last update time"] || "N/A"}</span>`;
 
-                // Handle both 'events' and 'matches' key structures safely
                 let rawMatches = data.events || data.matches || (Array.isArray(data) ? data : [data]);
                 allMatchesSp = rawMatches.sort((a, b) => {
                     const pA = getPriorityScoreSp(a);
@@ -813,9 +750,6 @@
             else { box.style.display = 'block'; btn.innerText = "⬆ Hide Headers"; }
         }
 
-        /* ----------------------------------------------------
-           4. FAWANA LOGIC 
-           ---------------------------------------------------- */
         function playFwStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchFawana() {
@@ -862,9 +796,6 @@
                 </div>`;
         }
 
-        /* ----------------------------------------------------
-           5. ROXI LOGIC 
-           ---------------------------------------------------- */
         function playRxStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchRoxi() {
@@ -911,12 +842,8 @@
                 </div>`;
         }
 
-        /* ----------------------------------------------------
-           6. BING STREAM LOGIC 
-           ---------------------------------------------------- */
         function playBgStream(url) { if(url) copyLink(url, "Link Copied!"); }
 
-        // Time Converter BDT -> IST (-30 mins)
         function convertBdtToIst(bdtStr) {
             if (!bdtStr || bdtStr.toLowerCase() === "live now" || bdtStr.toLowerCase() === "tba") return bdtStr;
             const match = bdtStr.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)\s+(\d{1,2})-(\d{1,2})-(\d{4})$/i);
@@ -955,7 +882,7 @@
                 const data = await res.json();
                 
                 status.innerHTML = `Last Updated: <span style="color:#00e676;">${data.playlist_info?.last_update_time || "N/A"}</span>`;
-                allDataBg = data.channels || [];
+                allDataBg = data.matches || data.channels || [];
                 
                 if(document.getElementById('page-bing').classList.contains('active')) renderBgContainer();
             } catch(e) { status.innerText = "Error Loading Data"; }
@@ -970,8 +897,8 @@
             }
             
             let html = '';
-            let liveMatches = allDataBg.filter(m => (m["Match Status"] || "").toLowerCase() === 'live');
-            let upcomingMatches = allDataBg.filter(m => (m["Match Status"] || "").toLowerCase() !== 'live');
+            let liveMatches = allDataBg.filter(m => m.is_playing === true || (m.status && ['LIVE', '1H', '2H', 'HT'].includes(m.status.toUpperCase())) || (m["Match Status"] || "").toLowerCase() === 'live');
+            let upcomingMatches = allDataBg.filter(m => !(m.is_playing === true || (m.status && ['LIVE', '1H', '2H', 'HT'].includes(m.status.toUpperCase())) || (m["Match Status"] || "").toLowerCase() === 'live'));
 
             if(liveMatches.length > 0) {
                 html += '<div class="section-header-bg" style="color:#ff0000; border-left: 3px solid #ff0000; padding-left: 8px;">🔴 LIVE NOW</div>';
@@ -993,43 +920,58 @@
         }
 
         function renderBgCardHtml(match, isLive) {
-            const t1Logo = match["Team 1 Logo"] || 'https://via.placeholder.com/50';
-            const t2Logo = match["Team 2 Logo"] || 'https://via.placeholder.com/50';
-            const t1Name = match["Team 1 Name"] || 'TBA';
-            const t2Name = match["Team 2 Name"] || 'TBA';
+            const t1Logo = match.localteam_logo || match["Team 1 Logo"] || 'https://via.placeholder.com/50';
+            const t2Logo = match.visitorteam_logo || match["Team 2 Logo"] || 'https://via.placeholder.com/50';
+            const t1Name = match.localteam_name || match["Team 1 Name"] || 'TBA';
+            const t2Name = match.visitorteam_name || match["Team 2 Name"] || 'TBA';
             
-            const category = match["Category"] || 'Sports';
-            const title = match["Match Title"] || 'Match Info';
-            const league = match["League"] || 'Unknown League';
-            const statusText = match["Match Status"] || 'NOT_STARTED';
+            const category = match.league_name || match["Category"] || 'Sports';
+            const title = match.name || match["Match Title"] || `${t1Name} vs ${t2Name}`;
+            const league = match.league_name || match["League"] || 'Unknown League';
+            const statusText = match.status ? (match.timelive ? `${match.status} (${match.timelive}')` : match.status) : (match["Match Status"] || 'NOT_STARTED');
             
-            const startTimeOriginal = match["Start Time"] || 'TBA';
+            const startTimeOriginal = match.bd_time || match["Start Time"] || 'TBA';
             const startTimeConverted = convertBdtToIst(startTimeOriginal);
 
             const liveBadgeHtml = isLive ? '<span class="bg-live-badge">LIVE</span>' : '';
 
+            const referer = match.referer || match["Referer"] || "";
+            const userAgent = match["User-Agent"] || "";
+
             let buttonsHtml = '';
-            if(match["Stream URL"] && match["Stream URL"].length > 0) {
-                match["Stream URL"].forEach((server) => {
+            const streamList = match.link_live || match["Stream URL"] || [];
+            const validStreams = streamList.filter(s => s.videoURL || s.play_url);
+
+            if(validStreams && validStreams.length > 0) {
+                validStreams.forEach((server, idx) => {
+                    const targetUrl = server.videoURL || server.play_url || "";
+                    if (!targetUrl) return;
+
+                    const fullPlayUrl = (referer && !targetUrl.includes('|Referer=')) ? `${targetUrl}|Referer=${referer}` : targetUrl;
+                    
+                    const serverName = server.display_name 
+                        ? `${server.display_name} (${(server.line || 'HD').toUpperCase()})` 
+                        : (server.server_name || `Server ${idx + 1}`);
+
                     buttonsHtml += `
                     <div class="bg-btn-row">
-                        <button class="bg-btn-play" onclick="playBgStream('${server.play_url}')">▶</button>
-                        <button class="bg-action-btn" onclick="copyLink('${server.play_url}', 'Link Copied!')">
-                            <span>📺 ${server.server_name}</span>
+                        <button class="bg-btn-play" onclick="playBgStream('${fullPlayUrl}')">▶</button>
+                        <button class="bg-action-btn" onclick="copyLink('${fullPlayUrl}', 'Link Copied!')">
+                            <span>📺 ${serverName}</span>
                         </button>
                     </div>`;
                 });
                 
-                if(match["User-Agent"] || match["Referer"]) {
+                if(referer || userAgent) {
                     buttonsHtml += `
                     <button class="bg-toggle-btn" onclick="toggleHeadersBg(this)">⬇ Show Headers</button>
                     <div class="bg-headers">
-                        ${match["Referer"] ? `<div style="margin-bottom:4px;"><span style="color:#00e676; font-weight:bold;">Referer:</span> ${match["Referer"]}</div>` : ''}
-                        ${match["User-Agent"] ? `<div><span style="color:#00e676; font-weight:bold;">User-Agent:</span> ${match["User-Agent"]}</div>` : ''}
+                        ${referer ? `<div style="margin-bottom:4px;"><span style="color:#00e676; font-weight:bold;">Referer:</span> ${referer}</div>` : ''}
+                        ${userAgent ? `<div><span style="color:#00e676; font-weight:bold;">User-Agent:</span> ${userAgent}</div>` : ''}
                     </div>`;
                 }
             } else {
-                buttonsHtml = `<div style="text-align:center;color:#555;font-size:11px;padding:5px;background:#222;border-radius:6px;">No streams available yet</div>`;
+                buttonsHtml = `<div style="text-align:center;color:#ff8c00;font-size:11px;padding:8px;background:#222;border-radius:6px;font-weight:600;">⏳ Stream link coming soon</div>`;
             }
 
             return `
@@ -1063,9 +1005,125 @@
             </div>`;
         }
 
-        /* ----------------------------------------------------
-           7. GOOZAPP LOGIC 
-           ---------------------------------------------------- */
+        function playDmStream(url) { if(url) copyLink(url, "Link Copied!"); }
+
+        function formatDmDate(ms) {
+            if(!ms) return 'TBA';
+            const date = new Date(Number(ms));
+            return date.toLocaleDateString('en-IN', { timeZone: 'Asia/Kolkata', day:'2-digit', month:'short', year:'numeric' }) + ' • ' + date.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour:'2-digit', minute:'2-digit', hour12:true }) + ' (IST)';
+        }
+
+        async function fetchDemandOn() {
+            isDmRendered = false;
+            const status = document.getElementById('status-dm');
+            status.innerText = "Loading...";
+            try {
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://raw.githubusercontent.com/api00007/on-demand/refs/heads/main/all_matches.json"));
+                const data = await res.json();
+                status.innerHTML = `Last Updated: <span style="color:#00e5ff;">Live Sync</span>`;
+                allDataDm = Array.isArray(data) ? data : (data.matches || []);
+                
+                if(document.getElementById('page-demandon').classList.contains('active')) renderDmContainer();
+            } catch(e) { status.innerText = "Error Loading Data"; }
+        }
+
+        function renderDmContainer() {
+            if(isDmRendered) return;
+            const container = document.getElementById('cards-container-dm');
+            if(allDataDm.length === 0) { 
+                container.innerHTML = '<div class="empty-msg">No Matches Found</div>'; 
+                return; 
+            }
+            
+            let html = '';
+            let liveMatches = allDataDm.filter(m => (m.status || "").toLowerCase() === 'live');
+            let upcomingMatches = allDataDm.filter(m => (m.status || "").toLowerCase() !== 'live');
+
+            if(liveMatches.length > 0) {
+                html += '<div class="section-header-bg" style="color:#ff0000; border-left: 3px solid #ff0000; padding-left: 8px;">🔴 LIVE NOW</div>';
+                html += liveMatches.map(m => renderDmCardHtml(m, true)).join('');
+            }
+            if(upcomingMatches.length > 0) {
+                html += '<div class="section-header-bg" style="color:#00e5ff; border-left: 3px solid #00e5ff; padding-left: 8px;">📅 UPCOMING</div>';
+                html += upcomingMatches.map(m => renderDmCardHtml(m, false)).join('');
+            }
+
+            container.innerHTML = html;
+            isDmRendered = true;
+        }
+
+        function renderDmCardHtml(match, isLive) {
+            const home = match.teams?.home || {};
+            const away = match.teams?.away || {};
+            const t1Name = home.name || match.title || 'Home Team';
+            const t2Name = away.name || 'Away Team';
+            const t1Logo = home.badge || 'https://via.placeholder.com/50';
+            const t2Logo = away.badge || 'https://via.placeholder.com/50';
+            
+            const category = match.category || 'Sports';
+            const title = match.title || `${t1Name} vs ${t2Name}`;
+            const league = match.league || 'Demand ON';
+            const formattedTime = formatDmDate(match.date);
+            const liveBadgeHtml = isLive ? '<span class="bg-live-badge">LIVE</span>' : '';
+
+            let buttonsHtml = '';
+            const hasHls = match.hlsUrl && match.hlsUrl.trim().length > 5;
+            const hasSd = match.sdUrl && match.sdUrl.trim().length > 5;
+
+            if (hasHls || hasSd) {
+                if (hasHls) {
+                    buttonsHtml += `
+                    <div class="bg-btn-row">
+                        <button class="bg-btn-play" onclick="playDmStream('${match.hlsUrl}')">▶</button>
+                        <button class="bg-action-btn btn-dm-hls" onclick="copyLink('${match.hlsUrl}', 'Link Copied!')">
+                            <span>📺 HLS STREAM</span><span class="mid-tag">HD</span>
+                        </button>
+                    </div>`;
+                }
+                if (hasSd) {
+                    buttonsHtml += `
+                    <div class="bg-btn-row">
+                        <button class="bg-btn-play" onclick="playDmStream('${match.sdUrl}')">▶</button>
+                        <button class="bg-action-btn btn-dm-sd" onclick="copyLink('${match.sdUrl}', 'Link Copied!')">
+                            <span>📺 SD STREAM</span><span class="mid-tag">SD</span>
+                        </button>
+                    </div>`;
+                }
+            } else {
+                buttonsHtml = `<div style="text-align:center;color:#ff8c00;font-size:11px;padding:8px;background:#222;border-radius:6px;font-weight:600;">⏳ Stream link coming soon</div>`;
+            }
+
+            return `
+            <div class="card-dm">
+                <div class="bg-matchup-container">
+                    ${liveBadgeHtml}
+                    <div class="bg-team">
+                        <img src="${t1Logo}" loading="lazy" class="bg-team-logo" onerror="this.src='https://via.placeholder.com/50'">
+                        <div class="bg-team-name">${t1Name}</div>
+                    </div>
+                    <div class="bg-vs">VS</div>
+                    <div class="bg-team">
+                        <img src="${t2Logo}" loading="lazy" class="bg-team-logo" onerror="this.src='https://via.placeholder.com/50'">
+                        <div class="bg-team-name">${t2Name}</div>
+                    </div>
+                </div>
+
+                <div class="bg-details">
+                    <div class="bg-title-row">
+                        <span class="bg-cat" style="color:#00e5ff;">[${category.toUpperCase()}]</span> 
+                        <span class="bg-title">${title}</span>
+                    </div>
+                    <div class="bg-league">${league}</div>
+                    <div class="bg-status">Status: ${(match.status || 'Upcoming').toUpperCase()}</div>
+                    <div class="bg-time">Time: ${formattedTime}</div>
+                    
+                    <div class="bg-btn-group">
+                        ${buttonsHtml}
+                    </div>
+                </div>
+            </div>`;
+        }
+
         function playGzStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchGoozapp() {
@@ -1112,9 +1170,6 @@
                 </div>`;
         }
 
-        /* ----------------------------------------------------
-           8. MAIN STREAM LOGIC 
-           ---------------------------------------------------- */
         function playMsStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchMainStream() {
@@ -1161,9 +1216,6 @@
                 </div>`;
         }
 
-        /* ----------------------------------------------------
-           9. EDGE STREAM LOGIC 
-           ---------------------------------------------------- */
         function playEsStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchEdgeStream() {
@@ -1210,9 +1262,6 @@
                 </div>`;
         }
 
-        /* ----------------------------------------------------
-           10. UNIVERSAL SEARCH LOGIC (HIGH PERFORMANCE)
-           ---------------------------------------------------- */
         let searchTimeout;
         function debounceSearch(query) {
             clearTimeout(searchTimeout);
@@ -1243,7 +1292,6 @@
             let html = '';
             const q = query.toLowerCase();
 
-            // 1. FANCODE SEARCH
             let fcResults = allDataFc.filter(m => 
                 (m.title && m.title.toLowerCase().includes(q)) || 
                 (m.tournament && m.tournament.toLowerCase().includes(q)) ||
@@ -1254,7 +1302,6 @@
                 html += fcResults.map(m => renderFcCardHtml(m)).join('');
             }
 
-            // 2. SONYLIV SEARCH
             let snResults = allDataSn.filter(m => 
                 (m.match_name && m.match_name.toLowerCase().includes(q)) || 
                 (m.title && m.title.toLowerCase().includes(q)) ||
@@ -1268,7 +1315,6 @@
                 }).join('');
             }
 
-            // 3. SPORTS HUB SEARCH
             let spResults = allDataSp.filter(m => 
                 (m.home_team_name && m.home_team_name.toLowerCase().includes(q)) || 
                 (m.away_team_name && m.away_team_name.toLowerCase().includes(q)) ||
@@ -1283,7 +1329,6 @@
                 }).join('');
             }
 
-            // 4. FAWANA SEARCH
             let fwResults = allDataFw.filter(m => 
                 (m.Rivels && m.Rivels.toLowerCase().includes(q)) || 
                 (m.Title && m.Title.toLowerCase().includes(q))
@@ -1293,7 +1338,6 @@
                 html += fwResults.map(m => renderFwCardHtml(m)).join('');
             }
 
-            // 5. ROXI SEARCH
             let rxResults = allDataRx.filter(m => 
                 (m.Rivels && m.Rivels.toLowerCase().includes(q)) || 
                 (m.Title && m.Title.toLowerCase().includes(q))
@@ -1303,22 +1347,39 @@
                 html += rxResults.map(m => renderRxCardHtml(m)).join('');
             }
 
-            // 6. BING STREAM SEARCH
             let bgResults = allDataBg.filter(m => 
+                (m.name && m.name.toLowerCase().includes(q)) ||
                 (m["Match Title"] && m["Match Title"].toLowerCase().includes(q)) || 
+                (m.league_name && m.league_name.toLowerCase().includes(q)) ||
                 (m["League"] && m["League"].toLowerCase().includes(q)) ||
+                (m.localteam_name && m.localteam_name.toLowerCase().includes(q)) ||
+                (m.visitorteam_name && m.visitorteam_name.toLowerCase().includes(q)) ||
                 (m["Team 1 Name"] && m["Team 1 Name"].toLowerCase().includes(q)) ||
                 (m["Team 2 Name"] && m["Team 2 Name"].toLowerCase().includes(q))
             );
             if(bgResults.length > 0) {
                 html += `<div class="section-header" style="color:#00e676; border-left:3px solid #00e676; padding-left:10px; margin-bottom:15px; margin-top:30px;">BING STREAM RESULTS</div>`;
                 html += bgResults.map(m => {
-                    const isLive = (m["Match Status"] || "").toLowerCase() === 'live';
+                    const isLive = m.is_playing === true || (m.status && ['LIVE', '1H', '2H', 'HT'].includes(m.status.toUpperCase())) || (m["Match Status"] || "").toLowerCase() === 'live';
                     return renderBgCardHtml(m, isLive);
                 }).join('');
             }
 
-            // 7. GOOZAPP SEARCH
+            let dmResults = allDataDm.filter(m => 
+                (m.title && m.title.toLowerCase().includes(q)) ||
+                (m.league && m.league.toLowerCase().includes(q)) ||
+                (m.category && m.category.toLowerCase().includes(q)) ||
+                (m.teams?.home?.name && m.teams.home.name.toLowerCase().includes(q)) ||
+                (m.teams?.away?.name && m.teams.away.name.toLowerCase().includes(q))
+            );
+            if(dmResults.length > 0) {
+                html += `<div class="section-header" style="color:#00e5ff; border-left:3px solid #00e5ff; padding-left:10px; margin-bottom:15px; margin-top:30px;">DEMAND ON RESULTS</div>`;
+                html += dmResults.map(m => {
+                    const isLive = (m.status || "").toLowerCase() === "live";
+                    return renderDmCardHtml(m, isLive);
+                }).join('');
+            }
+
             let gzResults = allDataGz.filter(m => 
                 (m.Rivels && m.Rivels.toLowerCase().includes(q)) || 
                 (m.Title && m.Title.toLowerCase().includes(q))
@@ -1328,7 +1389,6 @@
                 html += gzResults.map(m => renderGzCardHtml(m)).join('');
             }
 
-            // 8. MAIN STREAM SEARCH
             let msResults = allDataMs.filter(m => 
                 (m.Rivels && m.Rivels.toLowerCase().includes(q)) || 
                 (m.Title && m.Title.toLowerCase().includes(q))
@@ -1338,7 +1398,6 @@
                 html += msResults.map(m => renderMsCardHtml(m)).join('');
             }
 
-            // 9. EDGE STREAM SEARCH
             let esResults = allDataEs.filter(m => 
                 (m.Rivels && m.Rivels.toLowerCase().includes(q)) || 
                 (m.Title && m.Title.toLowerCase().includes(q))
@@ -1355,7 +1414,6 @@
             resultsContent.innerHTML = html;
         }
 
-        // --- INITIALIZATION ---
         applySectionVisibility();
         fetchFancode(); 
         fetchSony(); 
@@ -1363,10 +1421,10 @@
         fetchFawana(); 
         fetchRoxi();
         fetchBing();
+        fetchDemandOn();
         fetchGoozapp();
         fetchMainStream();
         fetchEdgeStream();
-
     </script>
 </body>
 </html>
