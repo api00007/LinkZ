@@ -405,7 +405,7 @@
 
     <script>
         const SECTION_VISIBILITY = {
-            'page-fancode': 'yes',
+            'page-fancode': 'no',
             'page-sony': 'yes',
             'page-sportify': 'yes',
             'page-fawana': 'yes',
@@ -414,7 +414,7 @@
             'page-demandon': 'yes',
             'page-goozapp': 'yes',
             'page-main-stream': 'no',
-            'page-edge-stream': 'no'
+            'page-edge-stream': 'yes'
         };
 
         function applySectionVisibility() {
@@ -1223,7 +1223,7 @@
             const status = document.getElementById('status-es');
             status.innerText = "Loading..."; 
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://all-rounder-two.vercel.app/streams-center"));
+                const res = await fetch(PROXY_URL + encodeURIComponent("https://raw.githubusercontent.com/api00007/ALL-ROUNDER/refs/heads/main/streams-center.json"));
                 const data = await res.json();
                 status.innerHTML = `Last Updated: <span>${data["Last update"] || "N/A"}</span>`;
                 allDataEs = data.Live_Data || []; 
