@@ -65,7 +65,6 @@
         }
 
         .fc-theme h2 { font-size: 18px; font-weight: 700; color: #fc1055; font-style: italic; }
-        .player-wrapper-fc { display: none; width: 100%; height: 240px; background: #000; margin-bottom: 20px; border-radius: 12px; overflow: hidden; border: 1px solid #333; position: sticky; top: 120px; z-index: 999; }
         .card-fc { background: #1c1c1e; border-radius: 12px; overflow: hidden; margin-bottom: 15px; border: 1px solid #2c2c2e; display: flex; flex-direction: column; }
         .thumb-box-fc { position: relative; width: 100%; aspect-ratio: 16/9; height: auto; }
         .thumb-fc { width: 100%; height: 100%; object-fit: cover; }
@@ -77,18 +76,11 @@
         .fc-title { color: #fff; }
         .fc-tour { color: #aaa; font-size: 12px; margin-bottom: 6px; }
         .fc-status { color: #888; font-size: 11px; margin-bottom: 12px; }
-        .fc-time-row { color: #888; font-size: 11px; margin-bottom: 15px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-        .fc-lang { background: #004d26; color: #00ff88; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; }
         
         .btn-play-fc { width: 50px; background: #222; color: #fc1055; border: 1px solid #333; border-radius: 8px; font-size: 16px; cursor: pointer; height: 42px; display: flex; align-items: center; justify-content: center; transition: 0.2s; }
         .btn-play-fc:active { background: #333; }
         .action-btn-fc { flex: 1; border: none; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; font-weight: 700; font-size: 13px; cursor: pointer; height: 42px; transition: 0.2s; color: #fff; }
         .action-btn-fc:active { transform: scale(0.98); }
-        
-        .fc-hd { background: linear-gradient(90deg, #ff6a00 0%, #ffc837 100%); color: #000; }
-        .fc-ind { background: linear-gradient(90deg, #56ccf2 0%, #2f80ed 100%); color: #fff; }
-        .fc-ban { background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%); color: #000; }
-        .fc-dai { background: linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%); color: #fff; }
         .fc-stream { background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%); color: #fff; }
         
         .sn-theme h2 { font-size: 18px; font-weight: 700; color: #ff8c00; font-style: italic; }
@@ -217,7 +209,6 @@
         .btn-video { background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%); color: #fff; }
         
         .refresh-btn { background: #fff; color: #000; border: none; padding: 6px 12px; border-radius: 15px; font-size: 11px; font-weight: 700; cursor: pointer; }
-        .close-player { position: absolute; top: 10px; right: 10px; background: rgba(255, 0, 0, 0.8); color: white; border: none; border-radius: 50%; width: 25px; height: 25px; cursor: pointer; z-index: 1000; display: flex; align-items: center; justify-content: center; font-weight: bold; }
         .header-common { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px; }
         .btn-group-common { display: flex; flex-direction: column; gap: 8px; }
         .btn-row-common { display: flex; gap: 8px; width: 100%; align-items: center; }
@@ -298,15 +289,17 @@
         <div id="search-results-content"></div>
     </div>
 
+    <!-- FANCODE SECTION -->
     <div id="page-fancode" class="page-section active fc-theme">
         <header class="header-common">
-            <h2>FANCODE LIVE</h2>
+            <h2>FANCODE <span>LIVE</span></h2>
             <button class="refresh-btn" onclick="fetchFancode()">🔄 REFRESH</button>
         </header>
         <div style="text-align:center;"><div id="status-fc" class="json-update-time">Loading Server...</div></div>
         <div id="cards-container-fc"></div>
     </div>
 
+    <!-- SONYLIV SECTION -->
     <div id="page-sony" class="page-section sn-theme">
         <header class="header-common">
             <h2>SONYLIV LIVE</h2>
@@ -317,6 +310,7 @@
         <div id="upcoming-section-sn"></div>
     </div>
 
+    <!-- SPORTS HUB SECTION -->
     <div id="page-sportify" class="page-section sp-theme">
         <header>
             <div class="top-row">
@@ -338,6 +332,7 @@
         </div>
     </div>
 
+    <!-- FAWANA SECTION -->
     <div id="page-fawana" class="page-section fw-theme">
         <header class="header-common">
             <h2>SPORTS <span>LIVE</span></h2>
@@ -347,6 +342,7 @@
         <div id="cards-container-fw"></div>
     </div>
 
+    <!-- ROXI SECTION -->
     <div id="page-roxi" class="page-section rx-theme">
         <header class="header-common">
             <h2>ROXI <span>STREAM</span></h2>
@@ -356,6 +352,7 @@
         <div id="cards-container-rx"></div>
     </div>
 
+    <!-- BING STREAM SECTION -->
     <div id="page-bing" class="page-section bg-theme">
         <header class="header-common">
             <h2>BING <span>STREAM</span></h2>
@@ -365,6 +362,7 @@
         <div id="cards-container-bg"></div>
     </div>
 
+    <!-- DEMAND ON SECTION -->
     <div id="page-demandon" class="page-section dm-theme">
         <header class="header-common">
             <h2>DEMAND <span>ON</span></h2>
@@ -374,6 +372,7 @@
         <div id="cards-container-dm"></div>
     </div>
 
+    <!-- GOOZAPP SECTION -->
     <div id="page-goozapp" class="page-section fw-theme">
         <header class="header-common">
             <h2>GOOZAPP <span>LIVE</span></h2>
@@ -383,6 +382,7 @@
         <div id="cards-container-gz"></div>
     </div>
 
+    <!-- MAIN STREAM SECTION -->
     <div id="page-main-stream" class="page-section fw-theme">
         <header class="header-common">
             <h2>MAIN <span>STREAM</span></h2>
@@ -392,6 +392,7 @@
         <div id="cards-container-ms"></div>
     </div>
 
+    <!-- EDGE STREAM SECTION -->
     <div id="page-edge-stream" class="page-section fw-theme">
         <header class="header-common">
             <h2>EDGE <span>STREAM</span></h2>
@@ -405,7 +406,7 @@
 
     <script>
         const SECTION_VISIBILITY = {
-            'page-fancode': 'no',
+            'page-fancode': 'yes',
             'page-sony': 'yes',
             'page-sportify': 'yes',
             'page-fawana': 'yes',
@@ -494,22 +495,33 @@
             t.style.opacity = '1'; setTimeout(() => t.style.opacity = '0', 2000);
         }
 
-        function playFcStream(url) { if(url && url!=="Unavailable") copyLink(url, "Link Copied!"); }
+        /* ==================== FANCODE LOGIC (NEW API & JSON) ==================== */
+        function playFcStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchFancode() {
             isFcRendered = false;
             const status = document.getElementById('status-fc');
             status.innerText = "Checking..."; 
             try {
-                const res = await fetch(PROXY_URL + encodeURIComponent("https://fancode-one.vercel.app/api?user=cricz"));
+                const res = await fetch("https://fancode-new.vercel.app/");
                 const data = await res.json();
-                allDataFc = (data.matches && Array.isArray(data.matches)) ? data.matches : (Array.isArray(data) ? data : []);
-                status.innerHTML = `Last Updated: <span>${data.last_updated || "N/A"}</span>`;
+                allDataFc = data.Live_Data || [];
+                status.innerHTML = `Last Updated: <span>${data["Last update"] || "Live Sync"}</span>`;
                 
                 if(document.getElementById('page-fancode').classList.contains('active')) {
                     renderFcContainer();
                 }
-            } catch(e) { status.innerText = "Error Loading Data"; }
+            } catch(e) { 
+                try {
+                    const fallbackRes = await fetch(PROXY_URL + encodeURIComponent("https://fancode-new.vercel.app/"));
+                    const data = await fallbackRes.json();
+                    allDataFc = data.Live_Data || [];
+                    status.innerHTML = `Last Updated: <span>${data["Last update"] || "Live Sync"}</span>`;
+                    if(document.getElementById('page-fancode').classList.contains('active')) renderFcContainer();
+                } catch(err) {
+                    status.innerText = "Error Loading Data"; 
+                }
+            }
         }
 
         function renderFcContainer() {
@@ -521,48 +533,45 @@
         }
 
         function renderFcCardHtml(match) {
-            const links = match.STREAMING_CDN || {};
-            const backup = links.backup || {};
-            const isLive = (match.status === 'LIVE' || match.streamingStatus === 'STARTED');
-            
+            const category = match.Category || "Sports";
+            const eventName = match.Event_Name || (match.Team_A ? `${match.Team_A} vs ${match.Team_B}` : "Live Match");
+            const leagueName = match.League_Name || category;
+            const streamName = match.Stream_Name || "LIVE STREAM";
+            const teamLogo = match.Team_Logo || "https://via.placeholder.com/400x200";
+            const fullLink = match.Link || "";
+
             let btns = '';
-            const addBtn = (l, btnClass, t, icon) => { 
-                if(l && l !== "Unavailable" && l !== "null" && l !== null) {
-                    btns += `
-                    <div class="btn-row-common">
-                        <button class="btn-play-fc" onclick="copyLink('${t}', 'Server Name Copied!')">▶</button>
-                        <button class="action-btn-fc ${btnClass}" onclick="copyLink('${l}', 'Link Copied!')">
-                            <span>${t}</span>
-                            <span style="font-size:15px;">${icon}</span>
-                        </button>
-                    </div>`;
-                }
-            };
-            
-            addBtn(links.fancode_cdn, 'fc-ind', 'FANCODE FHD 🇮🇳', '📋');
-            addBtn(links.fancode_bd_cdn, 'fc-ban', 'FANCODE FHD 🇧🇩', '📋');
-            addBtn(links.fancode_np_cdn, 'fc-ind', 'FANCODE FHD 🇳🇵', '📋');
-            addBtn(links.fancode_lk_cdn, 'fc-ban', 'FANCODE FHD 🇱🇰', '📋');
-            addBtn(backup.fancode_dai_cdn, 'fc-dai', 'FANCODE DAI', '🔗');
-            
-            if(!btns) btns = `<div style="text-align:center; padding:5px; background:#333; font-size:10px; border-radius:6px;">Links Unavailable</div>`;
-            
+            if (fullLink) {
+                btns = `
+                <div class="btn-row-common">
+                    <button class="btn-play-fc" onclick="playFcStream('${fullLink}')">▶</button>
+                    <button class="action-btn-fc fc-stream" onclick="copyLink('${fullLink}', 'Link Copied!')">
+                        <span>📺 ${streamName}</span>
+                        <span style="font-size:15px;">📋</span>
+                    </button>
+                </div>`;
+            } else {
+                btns = `<div style="text-align:center; padding:5px; background:#333; font-size:10px; border-radius:6px;">Stream Unavailable</div>`;
+            }
+
             return `
             <div class="card-fc">
                 <div class="thumb-box-fc">
-                    <img src="${match.image}" loading="lazy" class="thumb-fc" onerror="this.src='https://via.placeholder.com/400x200'">
-                    ${isLive ? '<span class="fc-live-badge">LIVE</span>' : ''}
+                    <img src="${teamLogo}" loading="lazy" class="thumb-fc" onerror="this.src='https://via.placeholder.com/400x200'">
+                    <span class="fc-live-badge">LIVE</span>
                 </div>
                 <div class="content-fc">
-                    <div class="fc-title-row"><span class="fc-cat">[${match.category || 'Sports'}]</span> <span class="fc-title">${match.title}</span></div>
-                    <div class="fc-tour">${match.tournament || ''}</div>
-                    <div class="fc-status">Status: ${match.status}</div>
-                    <div class="fc-time-row">Time: ${match.startTime} • Audio: <span class="fc-lang">${match.language || 'ENGLISH'}</span></div>
+                    <div class="fc-title-row">
+                        <span class="fc-cat">[${category}]</span> 
+                        <span class="fc-title">${eventName}</span>
+                    </div>
+                    <div class="fc-tour">🏆 ${leagueName}</div>
                     <div class="btn-group-common">${btns}</div>
                 </div>
             </div>`;
         }
 
+        /* ==================== SONYLIV LOGIC ==================== */
         function playSnStream(url) { if(url) copyLink(url, "Link Copied!"); }
 
         async function fetchSony() {
@@ -606,6 +615,7 @@
             return `<div class="card-sn"><div class="thumb-box-fc"><img src="${m.src||m.image}" loading="lazy" class="thumb-fc" onerror="this.src='https://via.placeholder.com/400x200'">${isLive ? '<span class="live-badge-common">LIVE</span>' : ''}</div><div class="content-fc"><div style="font-size:13px; font-weight:600;">${m.match_name||m.title}</div><div style="font-size:10px; color:#aaa; margin-bottom:5px;">${m.event_name||'Sports'}</div><div class="btn-group-common">${btns}</div></div></div>`;
         }
 
+        /* ==================== SPORTS HUB LOGIC ==================== */
         function playSpStream(url) { if(url) copyLink(url, "Link Copied!"); }
         
         let allMatchesSp = []; 
@@ -750,6 +760,7 @@
             else { box.style.display = 'block'; btn.innerText = "⬆ Hide Headers"; }
         }
 
+        /* ==================== FAWANA LOGIC ==================== */
         function playFwStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchFawana() {
@@ -796,6 +807,7 @@
                 </div>`;
         }
 
+        /* ==================== ROXI LOGIC ==================== */
         function playRxStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchRoxi() {
@@ -842,6 +854,7 @@
                 </div>`;
         }
 
+        /* ==================== BING STREAM LOGIC ==================== */
         function playBgStream(url) { if(url) copyLink(url, "Link Copied!"); }
 
         function convertBdtToIst(bdtStr) {
@@ -1005,6 +1018,7 @@
             </div>`;
         }
 
+        /* ==================== DEMAND ON LOGIC ==================== */
         function playDmStream(url) { if(url) copyLink(url, "Link Copied!"); }
 
         function formatDmDate(ms) {
@@ -1124,6 +1138,7 @@
             </div>`;
         }
 
+        /* ==================== GOOZAPP LOGIC ==================== */
         function playGzStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchGoozapp() {
@@ -1150,7 +1165,7 @@
 
         function renderGzCardHtml(match) {
             const LIVXOW_LOGO = "https://i.ibb.co/BVQtSgTC/1000343393.jpg";
-            const rivals = match.Rivels || "Team A vs Team B"; 
+            const rivals = match.Rivels || (match["Team A"] ? `${match["Team A"]} vs ${match["Team B"]}` : "Live Match"); 
             const title = match.Title || "Live Event";
             const fullLink = match.Link || "";
             return `
@@ -1170,6 +1185,7 @@
                 </div>`;
         }
 
+        /* ==================== MAIN STREAM LOGIC ==================== */
         function playMsStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchMainStream() {
@@ -1216,6 +1232,7 @@
                 </div>`;
         }
 
+        /* ==================== EDGE STREAM LOGIC ==================== */
         function playEsStream(url) { if(url) copyLink(url.split('|')[0], "Link Copied!"); }
 
         async function fetchEdgeStream() {
@@ -1262,6 +1279,7 @@
                 </div>`;
         }
 
+        /* ==================== UNIVERSAL SEARCH ==================== */
         let searchTimeout;
         function debounceSearch(query) {
             clearTimeout(searchTimeout);
@@ -1293,9 +1311,11 @@
             const q = query.toLowerCase();
 
             let fcResults = allDataFc.filter(m => 
-                (m.title && m.title.toLowerCase().includes(q)) || 
-                (m.tournament && m.tournament.toLowerCase().includes(q)) ||
-                (m.category && m.category.toLowerCase().includes(q))
+                (m.Event_Name && m.Event_Name.toLowerCase().includes(q)) || 
+                (m.Team_A && m.Team_A.toLowerCase().includes(q)) ||
+                (m.Team_B && m.Team_B.toLowerCase().includes(q)) ||
+                (m.Category && m.Category.toLowerCase().includes(q)) ||
+                (m.League_Name && m.League_Name.toLowerCase().includes(q))
             );
             if(fcResults.length > 0) {
                 html += `<div class="section-header" style="color:#fc1055; border-left:3px solid #fc1055; padding-left:10px; margin-bottom:15px;">FANCODE RESULTS</div>`;
@@ -1382,7 +1402,9 @@
 
             let gzResults = allDataGz.filter(m => 
                 (m.Rivels && m.Rivels.toLowerCase().includes(q)) || 
-                (m.Title && m.Title.toLowerCase().includes(q))
+                (m.Title && m.Title.toLowerCase().includes(q)) ||
+                (m["Team A"] && m["Team A"].toLowerCase().includes(q)) ||
+                (m["Team B"] && m["Team B"].toLowerCase().includes(q))
             );
             if(gzResults.length > 0) {
                 html += `<div class="section-header" style="color:#ff3b3b; border-left:3px solid #ff3b3b; padding-left:10px; margin-bottom:15px; margin-top:30px;">GOOZAPP RESULTS</div>`;
